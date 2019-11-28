@@ -1,0 +1,13 @@
+participant: Solid2
+
+precice-config-file: precice-config.xml
+
+interfaces:
+- mesh: Solid2-Mesh
+  patches:
+  - interface
+  write-data: Temperature
+  read-data: Heat-Flux
+
+CHTenabled: true
+evaluateBoundaries: false
